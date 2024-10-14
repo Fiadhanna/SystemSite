@@ -1,3 +1,14 @@
+// Array of alters
+
+const alters = [
+    { name: "Warron", age: 19, role: "Protector", description: "A garlic-bread loving ghost who is the main protector of the system...", image: "images/warron.jpg", file: "warron.html"},
+    { name: "Celestia", age: 0, role: "Caregiver", description: "A gothic fallen-down angel who takes care of the system's littles", image: "images/celestia.jpg", file: "celestia.html"},
+    { name: "Aspen", age: 7, role: "Little", description: "A young boy who loves dinosaurs, often seen with Doctor Felix", image: "images/aspen.jpg", file: "aspen.html"},
+    { name: "Lily", age: 9, role: "Little", description: "A little girl who loves My Little Pony, Five Nights At Freddys, and her daddy", image: "images/lily.jpg", file: "lily.html"},
+    { name: "Blythe", age: 10, role: "Little", description: "A hard-of-hearing alter who holds the trauma of Wales.", image: "images/blythe.jpg", file: "blythe.html"},
+    { name: "Alice", age: 7, role: "Little", description: "A girl who doesn't understand why her daddy would do bad things", image: "images/alice.jpg", file: "alice.html"},
+]
+
 // Function to load updates from localStorage and display them
 function loadUpdates() {
     const updatesContainer = document.getElementById('updates-container');
@@ -71,21 +82,26 @@ function deleteUpdate(index) {
     loadUpdates();
 }
 
-// Add event listener for the "Add Update" button
-document.getElementById('add-update-btn').addEventListener('click', function() {
-    const updateText = document.getElementById('update-text').value.trim();
+document.addEventListener('DOMContentLoaded', () => {
+    console.log('DOM fully loaded and parsed');  // Debugging: Check if DOMContentLoaded is triggered
+
+    const addUpdateButton = document.getElementById('add-update-btn');
     
-    if (updateText === '') {
-        alert('Please enter an update.');
-        return;
+    if (addUpdateButton) {
+        console.log('Add Update button found!');  // Debugging: Check if the button exists
+        addUpdateButton.addEventListener('click', function() {
+            const updateText = document.getElementById('update-text').value.trim();
+            console.log('Button clicked! Update text:', updateText);  // Debugging: Check the value of the input
+            // Add your update handling logic here
+            saveUpdate(updateText);
+            document.getElementById('update-text').value = '';
+
+        });
+    } else {
+        console.error('Error: Add Update button not found in the DOM');  // Debugging: Button not found error
     }
-
-    // Save the update
-    saveUpdate(updateText);
-
-    // Clear the input field
-    document.getElementById('update-text').value = '';
 });
+
 
 // Load updates on page load
 window.addEventListener('DOMContentLoaded', loadUpdates);
@@ -96,57 +112,67 @@ document.addEventListener('DOMContentLoaded', function() {
     document.getElementById('filter').addEventListener('change', sortAlters);
 });
 
-// Function to sort alters based on selected criteria
-function sortAlters(sortBy) {
-    // Get the container holding the alter cards
-    const altersList = document.getElementById('alters-list');
-    
-    // Ensure we have the correct alters list element
-    if (!altersList) {
-        console.error("Alters list container not found!");
-        return;
-    }
-    
-    // Get all the alter cards as an array
-    const alters = Array.from(altersList.getElementsByClassName('alter-card'));
 
-    if (!alters || alters.length === 0) {
-        console.error("No alters found to sort!");
+function displayAlters(alters) {
+    const altersContainer = document.getElementById('alters-container');
+
+    // Debug message to check if the alters container exists
+    console.log('Alters container:', altersContainer);
+
+    if (!altersContainer) {
+        console.error("Error: 'alters-container' element not found");
         return;
     }
 
-    // Sort based on the selected value
-    alters.sort((a, b) => {
-        let aValue = a.getAttribute(`data-${sortBy}`).toLowerCase();
-        let bValue = b.getAttribute(`data-${sortBy}`).toLowerCase();
+    // Clear the container before displaying new alters
+    altersContainer.innerHTML = '';
 
-        // Handle numerical sorting for age
-        if (sortBy === 'age') {
-            aValue = parseInt(aValue);
-            bValue = parseInt(bValue);
-        }
+    // Debug message to check the number of alters being displayed
+    console.log('Number of alters:', alters.length);
 
-        // Compare values (alphabetical or numerical depending on criteria)
-        if (aValue > bValue) {
-            return 1;
-        } else if (aValue < bValue) {
-            return -1;
-        } else {
-            return 0;
-        }
+    alters.forEach(alter => {
+        // Debug message for each alter
+        console.log('Displaying alter:', alter);
+
+        // Create a div for each alter
+        const alterBox = document.createElement('div');
+        alterBox.classList.add('alter-box');
+
+        // Set the innerHTML with anchor tags for the name and alter's data
+        alterBox.innerHTML = `
+            <img src="${alter.image}" alt="${alter.name}">
+            <h2><a href="${alter.file}" class="alter-link">${alter.name}</a></h2>
+            <p>Age: ${alter.age}</p>
+            <p>Role: ${alter.role}</p>
+        `;
+
+        // Append the alterBox to the altersContainer
+        altersContainer.appendChild(alterBox);
+
+        // Debug message to confirm alterBox is added
+        console.log('Alter box added for:', alter.name);
     });
 
-    // Clear the current alters list content
-    altersList.innerHTML = '';
-
-    // Append the sorted alters back into the container
-    alters.forEach(alter => altersList.appendChild(alter));
+    // Final debug message after all alters are displayed
+    console.log('All alters displayed');
 }
 
-// Automatically sort by name when the page loads
-window.addEventListener('DOMContentLoaded', () => {
-    // Default sort by name
-    sortAlters('name');
+// Function to sort alters alphabetically by name
+function sortAltersByName() {
+    return alters.sort((a, b) => a.name.localeCompare(b.name));
+}
+
+
+// Load alters and display them when the DOM content is fully loaded
+document.addEventListener('DOMContentLoaded', () => {
+    console.log('DOM fully loaded and parsed');
+
+    const sortedAlters = sortAltersByName();
+
+    // Debug message to check sorted alters
+    console.log('Sorted Alters:', sortedAlters);
+
+    displayAlters(sortedAlters);
 });
 
 const gallery = document.querySelector('.gallery-container');

@@ -7,37 +7,27 @@
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    <header>
-        <h1>Alters</h1>
-        <nav>
-            <a href="index.html">Home</a>
-        </nav>
+    <header class="site-header">
+        <div class="container">
+            <h1>System Alters</h1>
+            <nav class="nav-bar">
+                <a href="index.html" class="nav-link">Home</a>
+            </nav>
+        </div>
     </header>
 
-    <main>
-        <h2>Filter Alters</h2>
-        <select id="sort-select" onchange="sortAlters()">
-            <option value="name">Sort by Name</option>
-            <option value="age">Sort by Age</option>
-            <option value="role">Sort by Role</option>
-        </select>
-
-        <div id="alters-list">
-            <div class="alter-box" id="alter1">
-                <h3>Alter Name 1</h3>
-                <p>Role: Protector</p>
-                <p>Age: 10</p>
-                <img src="images/deletebutton.png" class="delete-btn" onclick="deleteAlter('alter1')">
-                <div class="alter-preview">This is a preview of Alter 1's description...</div>
-            </div>
-            <!-- More alter boxes -->
-        </div>
+        <section id="alters-container" class="alters-container">
+            <!-- Alters will be dynamically inserted here -->
+        </section>
     </main>
 
-    <footer>
-        <p>&copy; 2024 System Site</p>
+    <footer class="site-footer">
+        <div class="container">
+            <p>&copy; 2024 System Site. All Rights Reserved.</p>
+        </div>
     </footer>
 
     <script src="script.js"></script>
+    <script src="dynamicalters.js"></script>
 </body>
 </html>
