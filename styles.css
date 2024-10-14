@@ -1,0 +1,79 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #007BFF; /* Blue color */
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+}
+
+h1, h2 {
+    margin: 10px 0;
+}
+
+main {
+    padding: 20px;
+}
+
+.gallery {
+    display: flex;
+    overflow-x: auto;
+}
+
+.gallery img {
+    width: 100px; /* Adjust size as needed */
+    margin-right: 10px;
+}
+
+.updates {
+    margin-top: 20px;
+}
+
+.profile-container {
+    text-align: center;
+}
+
+.profile-image {
+    width: 200px; /* Adjust size as needed */
+    border-radius: 10px;
+}
+
+footer {
+    background-color: #007BFF; /* Blue color */
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Styles for blue theme */
+.blue-theme {
+    background-color: #e7f0ff; /* Light blue */
+}
+
+/* Styles for gothic theme */
+.gothic-theme {
+    background-color: #000;
+    color: #fff;
+}
+
+/* Alter box styling */
+.alter-box {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 5px;
+}
+ 
