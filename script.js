@@ -1,9 +1,9 @@
 // Array of alters
 
 const alters = [
-    { name: "Warron", age: 19, role: "Protector", description: "A garlic-bread loving ghost who is the main protector of the system...", image: "images/warron.jpg", file: "warron.html"},
-    { name: "Celestia", age: 0, role: "Caregiver", description: "A gothic fallen-down angel who takes care of the system's littles", image: "images/celestia.jpg", file: "celestia.html"},
-    { name: "Aspen", age: 7, role: "Little", description: "A young boy who loves dinosaurs, often seen with Doctor Felix", image: "images/aspen.jpg", file: "aspen.html"},
+    { name: "Warron", age: 19, role: "Protector", description: "A garlic-bread loving ghost who is the main protector of the system...", image: "images/warron.png", file: "warron.html"},
+    { name: "Celestia", age: 0, role: "Caregiver", description: "A gothic fallen-down angel who takes care of the system's littles", image: "images/celestia.png", file: "celestia.html"},
+    { name: "Aspen", age: 7, role: "Little", description: "A young boy who loves dinosaurs, often seen with Doctor Felix", image: "images/aspen.png", file: "aspen.html"},
     { name: "Lily", age: 9, role: "Little", description: "A little girl who loves My Little Pony, Five Nights At Freddys, and her daddy", image: "images/lily.jpg", file: "lily.html"},
     { name: "Blythe", age: 10, role: "Little", description: "A hard-of-hearing alter who holds the trauma of Wales.", image: "images/blythe.jpg", file: "blythe.html"},
     { name: "Alice", age: 7, role: "Little", description: "A girl who doesn't understand why her daddy would do bad things", image: "images/alice.jpg", file: "alice.html"},
