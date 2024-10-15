@@ -1,0 +1,120 @@
+/* General Styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    background-color: #ffe6f2;
+    color: #5c5c5c;
+}
+
+h1, h2 {
+    font-family: 'Arial', sans-serif;
+    color: #ff66b2;
+    text-shadow: 1px 1px 3px #ffcce0;
+}
+
+/* Navigation */
+nav {
+    background-color: #ffd6e7;
+    padding: 10px;
+    text-align: center;
+}
+
+.nav-link {
+    color: #ff66b2;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+}
+
+.nav-link:hover {
+    color: #ff99cc;
+}
+
+/* Header */
+header h1 {
+    text-align: center;
+    margin: 20px 0;
+    font-size: 3em;
+    color: #ff99cc;
+}
+
+/* Profile Section */
+.profile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    background-color: #fff0f8;
+    border-radius: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.profile-image img {
+    border: 5px solid #ff99cc;
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+}
+
+.profile-info {
+    margin-left: 30px;
+}
+
+.profile-info h2 {
+    color: #ff66b2;
+}
+
+.profile-info p {
+    line-height: 1.5;
+    font-size: 1.2em;
+}
+
+/* Gallery */
+.gallery {
+    text-align: center;
+    padding: 40px;
+    background-color: #fff0f8;
+    border-radius: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin: 40px 0;
+}
+
+.gallery h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #ff66b2;
+}
+
+.gallery-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.gallery-container img {
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
+    border: 3px solid #ff99cc;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.gallery-container img:hover {
+    transform: scale(1.1);
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #ffd6e7;
+    color: #ff66b2;
+}
+
+footer p {
+    margin: 0;
+    font-size: 1em;
+}
