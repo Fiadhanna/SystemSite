@@ -1,13 +1,15 @@
 // Array of alters
 
 const alters = [
-    { name: "Warron", age: 19, role: "Protector", description: "A garlic-bread loving ghost who is the main protector of the system...", image: "images/warron.png", file: "warron.html"},
-    { name: "Celestia", age: 0, role: "Caregiver", description: "A gothic fallen-down angel who takes care of the system's littles", image: "images/celestia.png", file: "celestia.html"},
-    { name: "Aspen", age: 7, role: "Little", description: "A young boy who loves dinosaurs, often seen with Doctor Felix", image: "images/aspen.png", file: "aspen.html"},
-    { name: "Lily", age: 9, role: "Little", description: "A little girl who loves My Little Pony, Five Nights At Freddys, and her daddy", image: "images/lily.jpg", file: "lily.html"},
-    { name: "Blythe", age: 10, role: "Little", description: "A hard-of-hearing alter who holds the trauma of Wales.", image: "images/blythe.jpg", file: "blythe.html"},
-    { name: "Alice", age: 7, role: "Little", description: "A girl who doesn't understand why her daddy would do bad things", image: "images/alice.jpg", file: "alice.html"},
-    { name: "Cookie", age: 16, role: "Helper", description: "A pastel-pink obsessed girl who is one of the main helpers in the system", image: "images/cookie.png", file: "cookie.html"},
+    { name: "Warron", age: 19, role: "Protector", description: "A garlic-bread loving ghost who is the main protector of the system...", image: "images/Warron.png", file: "warron.html"},
+    { name: "Celestia", age: "Unknown", role: "Caregiver", description: "A gothic fallen-down angel who takes care of the system's littles", image: "images/Celestia.png", file: "celestia.html"},
+    { name: "Aspen", age: 7, role: "Little", description: "A young boy who loves dinosaurs, often seen with Doctor Felix", image: "images/Aspen.png", file: "aspen.html"},
+    { name: "Lily", age: 9, role: "Little", description: "A little girl who loves My Little Pony, Five Nights At Freddys, and her daddy", image: "images/Lily.jpg", file: "lily.html"},
+    { name: "Blythe", age: 10, role: "Little", description: "A hard-of-hearing alter who holds the trauma of Wales.", image: "images/Blythe.jpg", file: "blythe.html"},
+    { name: "Alice", age: 7, role: "Little", description: "A girl who doesn't understand why her daddy would do bad things", image: "images/Alice.jpg", file: "alice.html"},
+    { name: "Cookie", age: 16, role: "Helper", description: "A pastel-pink obsessed girl who is one of the main helpers in the system", image: "images/Cookie.png", file: "cookie.html"},
+    { name: "Dahlia", age: "Unknown", role: "Unknown", description: "A girl who doesn't want to go to bed before 11pm.", image: "images/Dahlia.jpg", file: "dahlia.html"},
+    { name: "Calico", age: "Ageslider", role: "Trauma holder", description: "A trauma holder who can also transform into a calico cat!", image: "images/Calico.png", file: "calico.html"}
 ]
 
 // Function to load updates from localStorage and display them

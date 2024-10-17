@@ -1,0 +1,109 @@
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f8ff;
+    color: #2c3e50;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #3498db;
+    padding: 20px;
+    text-align: center;
+    color: white;
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+}
+
+main {
+    padding: 20px;
+}
+
+h2 {
+    color: #2980b9;
+}
+
+/* Profile Section */
+.profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.profile-img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    margin-top: 20px;
+}
+
+/* Gallery and Playlist Container */
+.gallery-playlist-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+/* Gallery Section */
+.gallery {
+    flex: 1;
+    text-align: center;
+}
+
+.gallery-wrapper {
+    overflow: hidden;
+    width: 100%;
+    height: 300px;
+    position: relative;
+}
+
+.gallery-images {
+    display: flex;
+    width: calc(100% * 2); /* Double the width to repeat the images */
+    animation: scrollGallery 15s linear infinite;
+}
+
+.gallery-images img {
+    width: 25%; /* Adjust this depending on how many images you have */
+    height: 300px;
+    object-fit: cover;
+}
+
+@keyframes scrollGallery {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); } /* Scroll half the width */
+}
+
+/* Playlist Section */
+.playlist {
+    flex: 1;
+    text-align: center;
+}
+
+iframe {
+    width: 100%;
+    height: 300px;
+    border: none;
+}
+
+/* Footer */
+footer {
+    background-color: #3498db;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    color: white;
+}
