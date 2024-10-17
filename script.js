@@ -9,7 +9,8 @@ const alters = [
     { name: "Alice", age: 7, role: "Little", description: "A girl who doesn't understand why her daddy would do bad things", image: "images/Alice.jpg", file: "alice.html"},
     { name: "Cookie", age: 16, role: "Helper", description: "A pastel-pink obsessed girl who is one of the main helpers in the system", image: "images/Cookie.png", file: "cookie.html"},
     { name: "Dahlia", age: "Unknown", role: "Unknown", description: "A girl who doesn't want to go to bed before 11pm.", image: "images/Dahlia.jpg", file: "dahlia.html"},
-    { name: "Calico", age: "Ageslider", role: "Trauma holder", description: "A trauma holder who can also transform into a calico cat!", image: "images/Calico.png", file: "calico.html"}
+    { name: "Calico", age: "Ageslider", role: "Trauma holder", description: "A trauma holder who can also transform into a calico cat!", image: "images/Calico.png", file: "calico.html"},
+    { name: "Mercy", age: 30, role: "System manager", description: "A Mercy fictive who runs the headspace.", image: "images/Mercy.png", file: "mercy.html"},
 ]
 
 // Function to load updates from localStorage and display them
