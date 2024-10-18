@@ -1,0 +1,137 @@
+/* General Styles */
+body {
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    background-color: #f7ede2;
+    color: #ee9b00;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #f6bd60;
+    text-align: center;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    font-size: 3em;
+    color: #ee9b00;
+    text-shadow: 2px 2px 5px #f7ede2;
+}
+
+.home-btn {
+    background-color: #ee9b00;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-size: 1.2em;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.home-btn:hover {
+    background-color: #f4a261;
+}
+
+/* Intro Section */
+.intro-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 20px;
+    background-color: #f7c9a9;
+}
+
+.intro-section img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin-right: 30px;
+    border: 5px solid #ee9b00;
+}
+
+.intro-text {
+    max-width: 600px;
+}
+
+h2 {
+    font-size: 2.5em;
+    color: #f6bd60;
+}
+
+p {
+    font-size: 1.2em;
+    line-height: 1.5;
+}
+
+/* Favorites Section */
+.favorites-section {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #f7ede2;
+}
+
+h2 {
+    font-size: 2.5em;
+    color: #ee9b00;
+}
+
+.favorites-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.favorite-item {
+    background-color: #f6bd60;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+}
+
+.favorite-item img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.favorite-item p {
+    font-size: 1.5em;
+}
+
+/* Gallery Section */
+.gallery-section {
+    padding: 40px 20px;
+    background-color: #ee9b00;
+    text-align: center;
+}
+
+.gallery-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.gallery-container img {
+    width: 200px;
+    height: 200px;
+    border-radius: 15px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.gallery-container img:hover {
+    transform: scale(1.1);
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #f6bd60;
+    color: white;
+}
