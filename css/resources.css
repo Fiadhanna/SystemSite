@@ -1,0 +1,103 @@
+/* General Body and Font Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f7ede2;
+    color: #003f63;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #fb8500;
+    padding: 20px;
+    text-align: center;
+    color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    font-size: 2.5em;
+    margin: 0;
+}
+
+/* Home Button Style */
+.home-btn {
+    background-color: #f6bd60;
+    color: #003f63;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 1.2em;
+    transition: background-color 0.3s ease;
+}
+
+.home-btn:hover {
+    background-color: #ee9b00;
+    color: white;
+}
+
+/* Resource List Style */
+.resource-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 20px;
+}
+
+/* Resource Container Style */
+.resource-container {
+    display: flex;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+    width: 80%;
+    max-width: 900px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.resource-container:hover {
+    transform: translateY(-10px);
+}
+
+/* Image in Resource Container */
+.resource-img {
+    width: 200px;
+    height: auto;
+    object-fit: cover;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+/* Resource Information Section */
+.resource-info {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+h2 {
+    margin-top: 0;
+    color: #0077b6;
+}
+
+.resource-link {
+    color: #ee9b00;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.resource-link:hover {
+    text-decoration: underline;
+}
+
+/* Footer Style */
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #fb8500;
+    color: white;
+}

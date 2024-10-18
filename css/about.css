@@ -1,0 +1,128 @@
+/* General Body and Font Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f7ede2;
+    color: #003f63;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #fb8500; 
+    padding: 20px;
+    text-align: center;
+    color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    font-size: 2.5em;
+    margin: 0;
+}
+
+/* Home Button Style */
+.home-btn {
+    background-color: #f6bd60;
+    color: #003f63;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 1.2em;
+    transition: background-color 0.3s ease;
+}
+
+.home-btn:hover {
+    background-color: #ee9b00;
+    color: white;
+}
+
+/* About Section */
+.about-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 20px;
+}
+
+.about-content {
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+    width: 80%;
+    max-width: 1000px;
+}
+
+.about-content img {
+    width: 40%;
+    height: auto;
+    border-radius: 10px;
+    margin-right: 20px;
+}
+
+.text-box {
+    width: 60%;
+}
+
+h2 {
+    color: #0077b6;
+    margin-bottom: 10px;
+}
+
+/* Gallery Section */
+.gallery-section {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.gallery-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.gallery-container img {
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.gallery-container img:hover {
+    transform: scale(1.1);
+}
+
+/* Moodboard Section */
+.moodboard-section {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.moodboard-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.moodboard-container img {
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.moodboard-container img:hover {
+    transform: scale(1.1);
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #fb8500; 
+    color: white;
+}
