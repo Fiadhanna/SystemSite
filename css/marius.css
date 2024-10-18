@@ -1,0 +1,159 @@
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;  /* Use a modern, welcoming font */
+    margin: 0;
+    padding: 0;
+    background-color: #e0f7fa; /* Light blue background */
+    color: #003f63; /* Dark blue text */
+    line-height: 1.6;
+}
+
+header {
+    background-color: #0077b6; /* Bold blue header */
+    padding: 20px;
+    text-align: center;
+    color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Home Button Styles */
+nav {
+    margin-top: 10px;
+}
+
+.home-btn {
+    background-color: #f6bd60;
+    color: #003f63;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 1.2em;
+    transition: background-color 0.3s ease;
+}
+
+.home-btn:hover {
+    background-color: #ee9b00;
+    color: white;
+}
+
+h1, h2 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    margin: 0 0 20px;
+}
+
+h1 {
+    font-size: 2.5em;
+    color: #f7ede2; /* Soft pastel color for a friendly look */
+}
+
+h2 {
+    color: #005f73;
+    font-size: 2em;
+}
+
+/* Bio Section */
+.bio {
+    padding: 40px 20px;
+    background-color: #caf0f8;
+}
+
+.bio-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;  /* Add more space between the image and text */
+}
+
+.profile-pic {
+    border-radius: 50%;
+    width: 160px;
+    height: 160px;
+    object-fit: cover;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);  /* Soft shadow for a 3D effect */
+}
+
+.bio-text {
+    max-width: 600px;
+    padding-left: 20px;
+    font-size: 1.1em;
+    color: #034f5d;
+    line-height: 1.8;  /* Improve readability */
+}
+
+.bio-text p {
+    margin-bottom: 16px; /* Add space between paragraphs */
+}
+
+/* Gallery Section */
+.gallery {
+    padding: 40px 20px;
+    background-color: #90e0ef;
+}
+
+.scrolling-gallery {
+    display: flex;
+    overflow-x: auto;
+    gap: 20px;  /* Increase space between images */
+    padding-bottom: 10px;
+}
+
+.scrolling-gallery img {
+    width: 220px;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 12px;
+    transition: transform 0.3s ease;  /* Smooth hover effect */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);  /* Subtle shadow for depth */
+}
+
+.scrolling-gallery img:hover {
+    transform: scale(1.05);  /* Slight zoom on hover for interactivity */
+}
+
+/* Interests Section */
+.interests {
+    padding: 40px 20px;
+    background-color: #48cae4;
+}
+
+.interests-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.interest-text {
+    max-width: 600px;
+    font-size: 1.1em;
+    line-height: 1.8;
+    color: #034f5d;
+}
+
+.interest-text p {
+    margin-bottom: 16px;  /* Add spacing between paragraphs */
+}
+
+.interest-pic {
+    width: 220px;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Footer */
+footer {
+    background-color: #0077b6;
+    text-align: center;
+    padding: 20px;
+    color: white;
+    font-size: 1em;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
+}
+
