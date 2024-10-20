@@ -92,3 +92,26 @@ main {
     border-radius: 10px;
     object-fit: cover;
 }
+
+.gallery {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.images {
+    display: flex;
+    gap: 10px;
+    overflow-x: auto;
+    white-space: nowrap; 
+    padding: 10px;
+    max-width: 100%;
+}
+
+.images img {
+    height: 150px;
+    flex-shrink: 0;
+    border-radius: 10px;
+    object-fit: cover;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+}
