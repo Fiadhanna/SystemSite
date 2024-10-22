@@ -14,7 +14,8 @@ const alters = [
     { name: "Marius", age: "40s", role: "Academic, Architect", description: "Marius is a fictive from Rainbow Six Siege, also known as Jager. He is an academic and a system architect", image: "images/Marius.png", file: "marius.html"},
     { name: "Gabe", age: "Unknown", role: "Protector", image: "images/Gabe.png", descriptionL: "placeholder", file: "gabe.html"},
     { name: "Kiriko", age: 18, role: "Trauma holder", description: "placeholder", image: "images/Kiriko.png", file: "kiriko.html"},
-    { name: "Halo", age: "Unknown", role: "Trauma holder", description: "placeholder", image: "images/Halo.png", file: "halo.html"}
+    { name: "Halo", age: "Unknown", role: "Trauma holder", description: "placeholder", image: "images/Halo.png", file: "halo.html"},
+    { name: "Mischievous Miku", age: 16, role: "Happiness holder", description: "placeholder", image: "images/MischievousMiku.png", file: "mischievousmiku.html"},
 ]
 
 // Function to load updates from localStorage and display them

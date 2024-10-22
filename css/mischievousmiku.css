@@ -1,0 +1,114 @@
+/* General Styles */
+body {
+    margin: 0;
+    font-family: 'Baloo 2', 'Montserrat', sans-serif;
+    background-color: #f7ede2;
+    color: #333;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Header */
+header {
+    text-align: center;
+    background-color: #f6bd60;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.nav-link {
+    color: #ee9b00;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: 700;
+}
+
+.nav-link:hover {
+    color: #333;
+}
+
+.profile-title {
+    font-size: 2.8em;
+    font-family: 'Baloo 2', sans-serif;
+    color: #ee9b00;
+    margin-top: 10px;
+}
+
+/* Profile Content */
+.profile-content {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.profile-left {
+    flex: 1;
+    padding-right: 20px;
+}
+
+.profile-img {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    border: 5px solid #f6bd60;
+}
+
+.fun-title {
+    font-size: 1.5em;
+    font-weight: 700;
+    color: #ee9b00;
+    margin-bottom: 10px;
+}
+
+.description-text {
+    font-size: 1.2em;
+    line-height: 1.6;
+    color: #333;
+}
+
+/* Gallery */
+.profile-right {
+    flex: 1;
+}
+
+.gallery-title, .moodboard-title {
+    font-size: 1.8em;
+    margin-bottom: 10px;
+    color: #f6bd60;
+}
+
+.gallery-wrapper, .moodboard-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.gallery-img, .moodboard-img {
+    width: calc(33% - 10px);
+    border: 3px solid #ee9b00;
+    border-radius: 8px;
+}
+
+.moodboard-grid {
+    margin-top: 20px;
+}
+
+/* Footer */
+.footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #f6bd60;
+    color: #ee9b00;
+    margin-top: 30px;
+    border-radius: 10px;
+}
+
+.footer p {
+    margin: 0;
+    font-size: 1em;
+}
