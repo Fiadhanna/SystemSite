@@ -1,0 +1,106 @@
+/* General Styles */
+body {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    background-color: #000;
+    color: #fff;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Header */
+.black-white-header {
+    text-align: center;
+    border-bottom: 2px solid #fff;
+    padding-bottom: 10px;
+}
+
+.nav-link {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: 300;
+}
+
+.nav-link:hover {
+    text-decoration: underline;
+}
+
+.profile-title {
+    font-size: 2.5em;
+    font-weight: 600;
+    margin-top: 10px;
+}
+
+/* Profile Content */
+.profile-content {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.profile-left {
+    flex: 1;
+    padding-right: 20px;
+}
+
+.profile-img {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.role-title {
+    font-size: 1.2em;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.description-text {
+    line-height: 1.6;
+    font-size: 1.1em;
+}
+
+/* Gallery */
+.profile-right {
+    flex: 1;
+}
+
+.gallery-title, .moodboard-title {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.gallery-wrapper, .moodboard-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.gallery-img, .moodboard-img {
+    width: calc(33% - 10px);
+    border: 2px solid #fff;
+    border-radius: 5px;
+}
+
+.moodboard-grid {
+    margin-top: 20px;
+}
+
+/* Footer */
+.footer {
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 30px;
+    border-top: 2px solid #fff;
+}
+
+.footer p {
+    margin: 0;
+    font-size: 0.9em;
+}
