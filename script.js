@@ -16,6 +16,7 @@ const alters = [
     { name: "Kiriko", age: 18, role: "Trauma holder", description: "placeholder", image: "images/Kiriko.png", file: "kiriko.html"},
     { name: "Halo", age: "Unknown", role: "Trauma holder", description: "placeholder", image: "images/Halo.png", file: "halo.html"},
     { name: "Mischievous Miku", age: 16, role: "Happiness holder", description: "placeholder", image: "images/MischievousMiku.png", file: "mischievousmiku.html"},
+    { name: "Ghost", age: "Unknown", role: "Death holders, purgers", description: "placeholder", image: "images/Ghost.png", file: "ghost.html"}
 ]
 
 // Function to load updates from localStorage and display them
